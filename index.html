@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Binary Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="input1" placeholder="Enter Binary or Decimal" />
+      <input type="text" id="input2" placeholder="Enter Binary or Decimal" />
+      
+      <div class="operations">
+        <button onclick="performOperation('+')">+</button>
+        <button onclick="performOperation('-')">-</button>
+        <button onclick="performOperation('*')">*</button>
+        <button onclick="performOperation('/')">/</button>
+      </div>
+      
+      <div class="results">
+        <p>Result: <span id="result"></span></p>
+        <p>Decimal: <span id="decimalResult"></span></p>
+        <p>Octal: <span id="octalResult"></span></p>
+        <p>Hexadecimal: <span id="hexResult"></span></p>
+      </div>
+      
+      <div class="conversions">
+        <input type="text" id="conversionInput" placeholder="Enter Binary or Decimal" />
+        <button onclick="convertBinary()">Binary to Decimal</button>
+        <button onclick="convertDecimal()">Decimal to Binary</button>
+      </div>
+      
+      <p id="conversionResult"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+                      </html>
+                      
